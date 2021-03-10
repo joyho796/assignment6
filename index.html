@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Amicable Numbers</title>
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Trebuchet MS', sans-serif;
+            padding-bottom: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Amicable Numbers</h1>
+    <div id="info">
+        <p>Enter two numbers to determine if they are amicable</p>
+
+        <form id="form">
+            <label>1st number:&nbsp&nbsp&nbsp</label>
+            <input type="text" name="firstNum"></input>
+            <br>
+            <label>2nd number:&nbsp&nbsp&nbsp</label>
+            <input type="text" name="secondNum"></input>
+            <input type="button" onclick="amicable(this.form)" value="Check Numbers">
+        </form>
+    </div>
+
+    <br>
+
+    <div id="summary" style="display: none;">
+        <p>The numbers:</p>
+        <p id="amicable">amicable</p>
+
+        <button class="button" type="button" id="toggle" onclick="showFactors()">Show Factors</button><br><br>
+
+        <div id="factors" style="display: none;">
+            <p id="first">first</p>
+            <p id="second">second</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
